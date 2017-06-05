@@ -651,7 +651,14 @@ public class ZeppelinConfiguration extends XMLConfiguration {
     ZEPPELIN_CREDENTIALS_PERSIST("zeppelin.credentials.persist", true),
     ZEPPELIN_WEBSOCKET_MAX_TEXT_MESSAGE_SIZE("zeppelin.websocket.max.text.message.size", "1024000"),
     ZEPPELIN_SERVER_DEFAULT_DIR_ALLOWED("zeppelin.server.default.dir.allowed", false),
-    ZEPPELIN_SERVER_JETTY_NAME("zeppelin.server.jetty.name", null);
+    ZEPPELIN_SERVER_JETTY_NAME("zeppelin.server.jetty.name", null),
+    ZEPPELIN_OAUTH20_ENABLE("zeppelin.oauth20.enable", false), //TODO-minwoo set optional value
+    ZEPPELIN_OAUTH20_ACCESS_TOKEN_HTTP_METHOD("zeppelin.oauth20.accessToken.httpMethod", "POST"),
+    ZEPPELIN_OAUTH20_ACCESS_TOKEN_URL("zeppelin.oauth20.accessToken.url", null),
+    ZEPPELIN_OAUTH20_REFRESH_TOKEN_URL("zeppelin.oauth20.refreshToken.url", null),
+    ZEPPELIN_OAUTH20_AUTHORIZATION_BASE_URL("zeppelin.oauth20.authorization.base.url", null),
+    ZEPPELIN_OAUTH20_SIGNATURE_TYPE("zeppelin.oauth20.signature.type", null),
+    ZEPPELIN_OAUTH20_ACCESS_TOKEN_EXTRACTOR_CLASSNAME("zeppelin.oauth20.accessToken.extractor.className", null);
 
     private String varName;
     @SuppressWarnings("rawtypes")

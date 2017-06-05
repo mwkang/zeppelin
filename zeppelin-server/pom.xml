@@ -41,6 +41,7 @@
     <javax.ws.rsapi.version>2.0-m10</javax.ws.rsapi.version>
     <libpam4j.version>1.8</libpam4j.version>
     <jna.version>4.1.0</jna.version>
+    <scribejava.version>4.1.0</scribejava.version>
 
     <!--test library versions-->
     <selenium.java.version>2.48.2</selenium.java.version>
@@ -111,6 +112,12 @@
     <dependency>
       <groupId>org.apache.shiro</groupId>
       <artifactId>shiro-web</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>com.github.scribejava</groupId>
+      <artifactId>scribejava-apis</artifactId>
+      <version>${scribejava.version}</version>
     </dependency>
 
     <dependency>
