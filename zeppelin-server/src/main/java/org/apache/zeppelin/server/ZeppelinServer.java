@@ -356,8 +356,8 @@ public class ZeppelinServer extends Application {
     webApp.addServlet(new ServletHolder(new DefaultServlet()), "/*");
     contexts.addHandler(webApp);
 
-    webApp.addFilter(new FilterHolder(CorsFilter.class), "/*",
-        EnumSet.allOf(DispatcherType.class));
+//    webApp.addFilter(new FilterHolder(CorsFilter.class), "/*",
+//        EnumSet.allOf(DispatcherType.class));
 
     webApp.setInitParameter("org.eclipse.jetty.servlet.Default.dirAllowed",
             Boolean.toString(conf.getBoolean(ConfVars.ZEPPELIN_SERVER_DEFAULT_DIR_ALLOWED)));
